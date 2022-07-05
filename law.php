@@ -1,5 +1,5 @@
 <div class="law__services ">
-                        <div class="service__items">
+                            <div class="service__items">
                             <div class="item-service__group">
                                 <img src="img/service1.png" alt="">
                                 <div class="service__item item-service">

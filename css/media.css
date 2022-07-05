@@ -139,7 +139,7 @@
     .basket {
         padding: calc(20px + (32 - 20) * ((100vw - 690px) / (1082 - 690)));
     }
-    .footer__column li{
+    .footer__column li a{
         font-size: calc(6px + (14 - 6) * ((100vw - 354px) / (1082 - 354)));
     }
 }
@@ -188,7 +188,7 @@
         flex: 1 1 50%;
         
     }
-    .menu-law__icon:not(:last-child) {
+    .tab:not(:last-child) {
         margin: 0px 9px 0px 0px;
     }
     .law__search{

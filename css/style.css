@@ -46,6 +46,11 @@ body {
     color: #212121;
 }
 
+.menu__link:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+}
+
 .law {
     flex: 1 1 auto;
     position: relative;
@@ -67,10 +72,12 @@ body {
     line-height: calc(41 / 30 * 100%);
     color: #000000;
 }
+
 .title {
     display: none;
 }
-.title.active{
+
+.title--active {
     display: block;
 }
 
@@ -82,7 +89,7 @@ body {
 
 .menu-law {}
 
-.menu-law__icon {
+.tab {
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -92,18 +99,20 @@ body {
     border-radius: 5px;
     padding: 11px;
     cursor: pointer;
-    
+
 }
-.menu-law__icon:hover{
+
+.tab:hover {
     transform: scale(1.1);
     transition: all 0.3s ease 0s;
 }
-.menu-law__icon:not(:last-child) {
+
+.tab:not(:last-child) {
     margin: 0px 13px 0px 0px;
 }
 
 
-.menu-law__icon.active {
+.tab--active {
     background-color: #A9F4AC;
     color: #FFFFFF;
     transition: all 0.3s ease 0s;
@@ -156,7 +165,8 @@ body {
     padding-bottom: 100px;
     justify-content: space-between;
 }
-.service__group{
+
+.service__group {
     max-width: 66.667%;
     margin-right: 30px;
 }
@@ -164,7 +174,8 @@ body {
 .service {
     display: none;
 }
-.service.active{
+
+.service--active {
     display: block;
 }
 
@@ -246,10 +257,12 @@ body {
     background-color: #279e2f;
     transition: all 0.3s ease 0s;
 }
+
 .item-service__btn:active {
     transform: translate(0, 2px);
-    transition: all 0.3s ease 0s;    
+    transition: all 0.3s ease 0s;
 }
+
 .item-service__description {
     color: #A5A5A5;
     border-left: 0.5px solid #A5A5A5;
@@ -390,17 +403,19 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 .basket__button:hover {
     background-color: #279e2f;
     transition: all 0.3s ease 0s;
 }
+
 .basket__button:active {
     transform: translate(0, 2px);
-    transition: all 0.3s ease 0s;    
+    transition: all 0.3s ease 0s;
 }
+
 .footer {
     background-color: rgba(229, 229, 229, 0.3);
     padding: 30px 0;
@@ -415,10 +430,10 @@ body {
     flex: 0 1 33.333%;
 }
 
-.footer__column li a{
+.footer__column li a {
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(19 / 14 * 100%);
+    line-height: 136%;
     color: #797979;
 
 }
@@ -428,9 +443,10 @@ body {
     color: #797979;
     transition: all 0.3s ease 0s;
 }
-.footer__column li a:visited {    
+
+.footer__column li a:visited {
     color: #797979;
-    
+
 }
 
 

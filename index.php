@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <div class="wrapper">
         <div class="container">
             <header class="header">
@@ -55,19 +56,20 @@
             </header>
             <main class="law">
                 <div class="law__head">
-                    <div id="law" class="law__title title">Юридические услуги</div>
-                    <!-- <div id="design" class="law__title title">Услуги дизайна</div> -->
-                    <!-- <div id="it" class="law__title title">IT-услуги</div> -->
-                    <!-- <div id="marketing" class="law__title title">Маркетинг</div> -->
-                    <!-- <div id="hr" class="law__title title">Кадровые услуги</div> -->
-                    <!-- <div id="ecommerce" class="law__title title">Для маркетплейсов</div> -->
-                    <div class="law__menu menu-law">
-                        <button class="menu-law__icon icon-li1" type="button" data-tab="#law"></button>
-                        <button class="menu-law__icon icon-li2" type="button" data-tab="#design"></button>
-                        <button class="menu-law__icon icon-li33" type="button" data-tab="#it"></button>
-                        <button class="menu-law__icon icon-li4" type="button" data-tab="#marketing"></button>
-                        <button class="menu-law__icon icon-li5" type="button" data-tab="#hr"></button>
-                        <button class="menu-law__icon icon-li6" type="button" data-tab="#ecommerce"></button>
+                    <h2 class="law__title title title--active">Юридические услуги</h2>
+                    <h2 class="law__title title">Услуги дизайна</h2>
+                    <h2 class="law__title title">IT-услуги</h2>
+                    <h2 class="law__title title">Маркетинг</h2>
+                    <h2 class="law__title title">Кадровые услуги</h2>
+                    <h2 class="law__title title">Для маркетплейсов</h2> 
+
+                    <div class="law__menu menu-tabs">
+                        <button class="tab icon-li1 tab--active" type="button" ></button>
+                        <button class="tab icon-li2" type="button" ></button>
+                        <button class="tab icon-li33" type="button" ></button>
+                        <button class="tab icon-li4" type="button" ></button>
+                        <button class="tab icon-li5" type="button" ></button>
+                        <button class="tab icon-li6" type="button" ></button>
                     </div>
                     <div class="law__search ">
                         <form action="#" class="search">
@@ -79,46 +81,46 @@
                 </div>
                 <div class="law__body">
                     <div class="service__group">
-                        <div id="law" class="service service__law">
-                            <?php
-                            include("law.php");
-                            ?>
+                        <div class="service service__law service--active">
+                        <?php 
+                        include "law.php" 
+                        ?>
                         </div>
-                        <div id="design" class="service service__design">
+                        <div class="service service__design">
                             <?php
                             include("design.php");
                             ?>
-                        </div>
-                        <div id="it" class="service service__it">
+                        </div> 
+                        <div class="service service__it">
                             <?php
                             include("it.php")
                             ?>
                         </div>
-                        <div id="marketing" class="service service__marketing">
+                        <div class="service service__marketing">
                             <?php
                             include("marketing.php");
                             ?>
                         </div>
-                        <div id="hr" class="service service__hr">
+                        <div class="service service__hr">
                             <?php
                             include("hr.php");
                             ?>
                         </div>
-                        <div id="ecommerce" class="service service__ecommerce">
+                        <div class="service service__ecommerce">
                             <?php
                             include("ecommerce.php");
                             ?>
                         </div>
                     </div>
                     <div class="law__basket basket">
-                        <div class="basket__title title-min">Корзина</div>
+                        <h3 class="basket__title title-min">Корзина</h3>
                         <div class="basket__position">
                             <div class="basket__close">&times</div>
                             <div class="basket__img">
                                 <img src="img/service-basket.png" alt="">
                             </div>
                             <div class="basket__label label-basket">
-                                <div class="label-basket__title">Составление иска</div>
+                                <h4 class="label-basket__title">Составление иска</h4>
                                 <div class="label-basket__text">юридическая услуга</div>
                                 <div class="label-basket__price">от 3000р</div>
                             </div>
@@ -130,7 +132,7 @@
                                 <img src="img/service-basket.png" alt="">
                             </div>
                             <div class="basket__label label-basket">
-                                <div class="label-basket__title">Договор <br> купли-продажи</div>
+                                <h4 class="label-basket__title">Договор <br> купли-продажи</h4>
                                 <div class="label-basket__text">юридическая услуга</div>
                                 <div class="label-basket__price">от 3000р</div>
                             </div>
@@ -142,7 +144,7 @@
                                 <img src="img/service-basket.png" alt="">
                             </div>
                             <div class="basket__label label-basket">
-                                <div class="label-basket__title">Трудовой договор</div>
+                                <h4 class="label-basket__title">Трудовой договор</h4>
                                 <div class="label-basket__text">юридическая услуга</div>
                                 <div class="label-basket__price">от 3000р</div>
                             </div>
